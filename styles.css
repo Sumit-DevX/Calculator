@@ -1,0 +1,96 @@
+body {
+    background-color: #99c089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 550px;
+    height: 42rem;
+    margin-top: 9rem;
+    background-color: #575757;
+    border-radius: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-bottom: 20px solid #424242;
+    border-right: 15px solid #424242;
+    border-left: 5px solid #424242;
+}
+
+.display {
+    background-color: #bbd0bf;
+    height: 5.5rem;
+    width: 90%;
+    border-radius: 1.5rem;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    border-left: 10px solid #424242;
+    border-right: 10px solid #424242;
+    border-bottom: 10px solid #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5,80px);  
+    grid-gap: 1.5em;
+    margin: auto;
+    position: relative;
+    top: 4rem;
+    left: 2.7rem;
+}
+
+.buttons {
+    border: 1px solid black;
+    background-color: #ebebeb;
+    border-radius: none;
+    padding: 1fr;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 10px solid #424242;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 2dvb;
+    user-select: none;
+}
+
+
+.buttons:active {   
+  user-select: none;             
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  transition: background-color 34ms ease;
+  transform: translateY(2px);    
+  box-shadow: 0 2px #444444;     
+}
+
+.display-text {
+    width: 95%;
+    height: 90%;
+    font-size: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: orbiron, monospace;
+    font-weight:bolder;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.last-button {
+    background-color: #f5a34d;
+    grid-column: span 2;
+}
