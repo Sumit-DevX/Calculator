@@ -22,8 +22,11 @@ for(let i=4;i<18 && (i);i++){
       r = 0;
       d = a = m = s = 1; 
     }else {
-      display.textContent += buttons[i].textContent;
-      d = a = m = s = 1;
+      if(c < 12){
+        display.textContent += buttons[i].textContent;
+        d = a = m = s = 1;
+        c++;
+      }
     }
   })
 }
