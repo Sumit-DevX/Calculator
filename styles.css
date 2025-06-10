@@ -39,10 +39,10 @@ body {
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(5,80px);  
     grid-gap: 1.5em;
-    margin: auto;
     position: relative;
     top: 4rem;
-    left: 2.7rem;
+    margin: auto;
+    place-content: center;
 }
 
 .buttons {
