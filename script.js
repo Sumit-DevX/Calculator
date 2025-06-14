@@ -112,7 +112,8 @@ buttons[18].addEventListener('click', ()=>{
       text = text.replaceAll("÷","/");
     }
     let result = math.evaluate(text);
-    if(text.includes(".")){
+    let resultToString = result.toString();
+    if(resultToString.includes(".")){  
       display.textContent = result.toFixed(1);
     }else {
       display.textContent = result;
