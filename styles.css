@@ -95,7 +95,7 @@ body {
     grid-column: span 2;
 }
 
-@media(min-width: 350px){
+@media(max-width: 350px){
     .calculator {
         width: 95vw;
         height: 80vh;
